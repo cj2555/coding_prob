@@ -10,7 +10,9 @@ func hourglassSum(arr [][]int32) int32 {
             if i ==0 && j==1{
                 sum=temp
             }else{
-                sum=max(sum,temp)
+				if temp > sum{
+					sum=temp
+				}
             }
         }
     }
